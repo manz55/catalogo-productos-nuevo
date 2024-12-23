@@ -1,0 +1,30 @@
+# Excluir archivos JSON de localStorage
+*.json
+
+# Excluir archivos de logs
+*.log
+
+# Excluir archivos de caché u otros temporales
+.cache/
+
+# Excluir archivos de dependencias de Node.js
+node_modules/
+
+# Excluir archivos de configuración del sistema operativo
+.DS_Store  # Para macOS
+Thumbs.db  # Para Windows
+
+# Excluir archivos de construcción
+/dist/
+/build/
+
+# Excluir configuraciones del IDE/editor
+.vscode/
+.idea/
+
+# Excluir archivos de entornos virtuales de Python
+env/
+venv/
+
+# Excluir archivos específicos de Windows
+*.swp
