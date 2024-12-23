@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoria Hogar</title>
+    <link rel="stylesheet" href="css/hogar.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="#" class="volver-inicio">Volver al inicio</a>
+        <div class="logo">
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#welcome">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#lista">Lista</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Sección de bienvenida -->
+    <section class="welcome-section" id="welcome">
+        <h1>Bienvenidos a nuestra categoria de Hogar</h1>
+        <p>Encuentra los mejores productos que convinen en tu Hogar.</p>
+    </section>
+
+    <!-- Sección de categorías -->
+    <section class="categories">
+        <a href="belleza.html" class="category">
+            <img src="assets/belleza (2).jpg" alt="Categoria 2">
+            <p>Belleza</p>
+        </a>
+        <a href="/menu.html" class="category">
+            <img src="/assets/fotos/logoinicial.png" alt="Categoria 3">
+            <p>Menu Principal</p>
+        </a>
+    </section>
+    <!-- Sección de productos -->
+    <section class="productos-section" id="productos">
+        <h2>Productos Disponibles</h2>
+        <div class="productos-grid">
+            <!-- Producto 1 -->
+            <div class="producto-item">
+                <img src="assets/fotos/cubrecama matrimonial.jpeg" alt="Producto 1" class="producto-image">
+                <div class="producto-details">
+                    <span class="producto-name">Cubrecamas</span>
+                    <p class="producto-description">Es un cubrecamas ideal para matrimoniales o queen, color gris.</p>
+                    <span class="producto-price">Q100.00</span>
+                    <button class="add-to-cart" onclick="agregarALista('Cubrecamas', 'Q100.00', 'assets/fotos/cubrecama matrimonial.jpeg')">Añadir a la lista</button>
+                </div>
+            </div>
+            
+            <!-- Producto 2 -->
+            <div class="producto-item">
+                <img src="assets/fotos/Edredones matrimonial.jpeg" alt="Producto 2" class="producto-image">
+                <div class="producto-details">
+                    <span class="producto-name">Edredones matrimonial</span>
+                    <p class="producto-description">Tamaño matrimonial o queen, color blanco.</p>
+                    <span class="producto-price">Q125.00</span>
+                    <button class="add-to-cart" onclick="agregarALista('Edredones matrimonial', 'Q125.00', 'assets/fotos/Edredones matrimonial.jpeg')">Añadir a la lista</button>
+                </div>
+            </div>
+            
+            <!-- Producto 3 -->
+            <div class="producto-item">
+                <img src="assets/fotos/imagen (6).jpeg" alt="Producto 3" class="producto-image">
+                <div class="producto-details">
+                    <span class="producto-name">Tazón Murano</span>
+                    <p class="producto-description">color Lila mediano 2.5Lts..</p>
+                    <span class="producto-price">Q.65.00</span>
+                    <button class="add-to-cart" onclick="agregarALista('Tazón Murano', 'Q.65.00', 'assets/fotos/imagen (6).jpeg')">Añadir a la lista</button>
+                </div>
+            </div>
+  
+            <!-- Producto 4 -->
+            <div class="producto-item">
+                <img src="assets/fotos/imagen (7).jpeg" alt="Producto 4" class="producto-image">
+                <div class="producto-details">
+                    <span class="producto-name">Tenedores Murano</span>
+                    <span class="producto-price">Q.28.00</span>
+                    <p class="producto-description">Tenedores ideales para ensaladas.</p>
+                    <button class="add-to-cart" onclick="agregarALista('Tenedores Murano', 'Q.28.00', 'assets/fotos/imagen (7).jpeg')">Añadir a la lista</button>
+                </div>
+            </div>
+
+             <!-- Producto 5 -->
+            <div class="producto-item">
+                <img src="assets/fotos/imagen (23).jpeg" alt="Producto 5" class="producto-image">
+                <div class="producto-details">
+                    <span class="producto-name">Super Frechuga</span>
+                    <span class="producto-price">Q125.00</span>
+                    <p class="producto-description">Conserva frescas las hortalizas, con capacidad de 3 litros.</p>
+                    <button class="add-to-cart" onclick="agregarALista('Super Frechuga', 'Q125.00', 'assets/fotos/imagen (23).jpeg')">Añadir a la lista</button>
+                </div>
+            </div>
+
+            <!-- Producto 6 -->
+            <div class="producto-item">
+                <img src="assets/fotos/imagen (19).jpeg" alt="Producto 6" class="producto-image">
+                <div class="producto-details">
+                    <span class="producto-name">Salero unidad</span>
+                    <span class="producto-price">Q.42.00</span>
+                    <p class="producto-description">Capacidad de hasta 50Ml ideal para sazonar tus comidas.</p>
+                    <button class="add-to-cart" onclick="agregarALista('Salero unidad', 'Q.42.00', 'assets/fotos/imagen (19).jpeg')">Añadir a la lista</button>
+                </div>
+            </div>
+
+                        <!-- Producto 7 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (20).jpeg" alt="Producto 7" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Juegos de saleros</span>
+                                <p class="producto-description">Tiene una capacidad de hasta 50Ml ideal para sazonar tus comidas.</p>
+                                <span class="producto-price">Q.63.00</span>
+                                <button class="add-to-cart" onclick="agregarALista('Juegos de saleros', 'Q.63.00', 'assets/fotos/imagen (20).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 8 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (22).jpeg" alt="Producto 8" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Set de tazones Aloha</span>
+                                <p class="producto-description">1 Tazon de 12L, 2 Tazones 2L C/U, color cereza</p>
+                                <span class="producto-price">Q.290.00</span>
+                                <button class="add-to-cart" onclick="agregarALista('Set de tazones Aloha', 'Q.290.00', 'assets/fotos/imagen (22).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 9 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (24).jpeg" alt="Producto 9" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Duo tazones Aloha</span>
+                                <p class="producto-description">2 Tazones de 2L C/U color cereza.</p>
+                                <span class="producto-price">Q.130.00</span>
+                                <button class="add-to-cart" onclick="agregarALista('Duo tazones Aloha', 'Q.130.00', 'assets/fotos/imagen (24).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+              
+                        <!-- Producto 10 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (25).jpeg" alt="Producto 10" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Jumbo Tazón</span>
+                                <span class="producto-price">Q.225.00</span>
+                                <p class="producto-description">Con capacidad de 14 Litros, color amarillo.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Jumbo Tazón', 'Q.225.00', 'assets/fotos/imagen (25).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+            
+                         <!-- Producto 11 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (29).jpeg" alt="Producto 11" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Mega Tazón</span>
+                                <span class="producto-price">Q.175.00</span>
+                                <p class="producto-description">Con capacidad de 10 Litros, color naranja.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Mega Tazón', 'Q.175.00', 'assets/fotos/imagen (29).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+            
+                        <!-- Producto 12 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (31).jpeg" alt="Producto 12" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Duo de Mega Tazón</span>
+                                <span class="producto-price">Q.295.00</span>
+                                <p class="producto-description">Con capacidad de 10 Litros cada uno, color naranja.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Duo de Mega Tazón', 'Q.295.00', 'assets/fotos/imagen (31).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                         <!-- Producto 13 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (39).jpeg" alt="Producto 13" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Super Meditazas</span>
+                                <span class="producto-price">Q.70.00</span>
+                                <p class="producto-description">Set de 6 tazas medidoras, color naranja.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Super Meditazas', 'Q.70.00', 'assets/fotos/imagen (39).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                         <!-- Producto 14 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (36).jpeg" alt="Producto 14" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Tazón Alohá</span>
+                                <span class="producto-price">Q.145.00</span>
+                                <p class="producto-description">Con capacidad de 7.5L, color naranja.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Tazón Alohá', 'Q.145.00', 'assets/fotos/imagen (36).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+            
+                        <!-- Producto 15 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (43).jpeg" alt="Producto 15" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Duo de Tazones Alohá</span>
+                                <span class="producto-price">Q.110.00</span>
+                                <p class="producto-description">2 Tazones de 450mL de capacidad C/U.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Duo de Tazones Alohá', 'Q.110.00', 'assets/fotos/imagen (43).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 16 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (40).jpeg" alt="Producto 16" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Set de Tazones Alohá</span>
+                                <span class="producto-price">Q.195.00</span>
+                                <p class="producto-description">Tazón grande con capacida de 7.5L, 2 Tazones de 450mL C/U</p>
+                                <button class="add-to-cart" onclick="agregarALista('Set de Tazones Alohá', 'Q.195.00', 'assets/fotos/imagen (40).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 17 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (42).jpeg" alt="Producto 17" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Modular</span>
+                                <span class="producto-price">Q.100.00</span>
+                                <p class="producto-description">Con capacidad de 2.5 Litros</p>
+                                <button class="add-to-cart" onclick="agregarALista('Modular', 'Q.100.00', 'assets/fotos/imagen (42).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 18 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (57).jpeg" alt="Producto 18" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Platos Floresta</span>
+                                <span class="producto-price">Q.85.00</span>
+                                <p class="producto-description">Set de 4 platos hondos, Capacidad de 700mL, color verde</p>
+                                <button class="add-to-cart" onclick="agregarALista('Platos Floresta', 'Q.85.00', 'assets/fotos/imagen (57).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                         <!-- Producto 19 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (58).jpeg" alt="Producto 19" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Platos Floresta</span>
+                                <span class="producto-price">Q.95.00</span>
+                                <p class="producto-description">Set de 4 platos planos para postre.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Platos Floresta', 'Q.95.00', 'assets/fotos/imagen (58).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 20 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (70).jpeg" alt="Producto 20" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">RefriRedondo</span>
+                                <span class="producto-price">Q.35.00</span>
+                                <p class="producto-description">Envia alimentos y refrigeralos, con capacidad de 410mL</p>
+                                <button class="add-to-cart" onclick="agregarALista('RefriRedondo', 'Q.35.00', 'assets/fotos/imagen (70).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 21 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (71).jpeg" alt="Producto 21" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">RefriModular</span>
+                                <span class="producto-price">Q.45.00</span>
+                                <p class="producto-description">Envia alimentos y refrigeralos, con capacidad de 650mL.</p>
+                                <button class="add-to-cart" onclick="agregarALista('RefriModular', 'Q.45.00', 'assets/fotos/imagen (71).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 22 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (96).jpeg" alt="Producto 22" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Lonchera unisex</span>
+                                <span class="producto-price">Q.90.00</span>
+                                <p class="producto-description">Lonchera ideal para transportar tus alimentos.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Lonchera unisex', 'Q.90.00', 'assets/fotos/imagen (96).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 23 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (106).jpeg" alt="Producto 23" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">TupperLindro</span>
+                                <span class="producto-price">Q.180.00</span>
+                                <p class="producto-description">Set de 4 con capacidad de 875mL C/U, color cereza.</p>
+                                <button class="add-to-cart" onclick="agregarALista('TupperLindro', 'Q.180.00', 'assets/fotos/imagen (106).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 24 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (107).jpeg" alt="Producto 24" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">TupperLindro unidad</span>
+                                <span class="producto-price">Q.60.00 C/U</span>
+                                <p class="producto-description">transporta bebidas y refrescos, cada uno con capadicad de 875mL</p>
+                                <button class="add-to-cart" onclick="agregarALista('TupperLindro unidad', 'Q.60.00', 'assets/fotos/imagen (107).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 25 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (115).jpeg" alt="Producto 25" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Platos Floresta</span>
+                                <span class="producto-price">Q85.00</span>
+                                <p class="producto-description">Set de 4 platos hondos, color cereza.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Platos Floresta', 'Q85.00', 'assets/fotos/imagen (115).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 26 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (47).jpeg" alt="Producto 26" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Botanero con plato domino</span>
+                                <span class="producto-price">Q.125.00</span>
+                                <p class="producto-description">Set de 4 platos hondos</p>
+                                <button class="add-to-cart" onclick="agregarALista('Botanero con plato domino', 'Q.125.00', 'assets/fotos/imagen (47).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 27 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (221).jpeg" alt="Producto 27" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Micro Flash</span>
+                                <span class="producto-price">Q90.00</span>
+                                <p class="producto-description">recipiente para recalentar alimentos en el microondas.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Micro Flash', 'Q90.00', 'assets/fotos/imagen (221).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 28 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (223).jpeg" alt="Producto 28" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Platos hondos Floresta</span>
+                                <span class="producto-price">Q95.00</span>
+                                <p class="producto-description">Set de 4 platos hondos.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Platos hondos Floresta', 'Q95.00', 'assets/fotos/imagen (223).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 29 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (225).jpeg" alt="Producto 29" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Set tazas Alohá</span>
+                                <span class="producto-price">Q105.00</span>
+                                <p class="producto-description">Set de 4 tazas, color azul.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Set tazas Alohá', 'Q105.00', 'assets/fotos/imagen (225).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 30 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (226).jpeg" alt="Producto 30" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Set Floresta</span>
+                                <span class="producto-price">Q145.00</span>
+                                <p class="producto-description">Set de 4 tazas y 4 platos hondos, color azul.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Set Floresta', 'Q145.00', 'assets/fotos/imagen (226).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 31 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/plancha electrica comida.jpeg" alt="Producto 31" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Plancha eléctrica</span>
+                                <span class="producto-price">Q125.00</span>
+                                <p class="producto-description">Una opción versátil para cocinar en interiores o exteriores.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Plancha eléctrica', 'Q125.00', 'assets/fotos/plancha electrica comida.jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 32 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (212).jpeg" alt="Producto 32" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Juego de thermo con tazas</span>
+                                <span class="producto-price">Q130.00</span>
+                                <p class="producto-description">Una opción versátil para llevar tu cafe.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Juego de thermo con tazas', 'Q130.00', 'assets/fotos/imagen (212).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+                        
+                        <!-- Producto 33 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (173).jpeg" alt="Producto 33" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Taza ¨amor eterno¨</span>
+                                <span class="producto-price">Q20.00</span>
+                                <p class="producto-description">Linda taza para acompañar tu mañana.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Juego de thermo con tazas', 'Q20.00', 'assets/fotos/imagen (173).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 34 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (177).jpeg" alt="Producto 34" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Taza ¨manos de Dios¨</span>
+                                <span class="producto-price">Q20.00</span>
+                                <p class="producto-description">Linda taza para acompañar tu mañana.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Taza ¨manos de Dios¨', 'Q20.00', 'assets/fotos/imagen (177).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 35 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (178).jpeg" alt="Producto 35" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Taza ¨la mejora parte de mi vida¨</span>
+                                <span class="producto-price">Q20.00</span>
+                                <p class="producto-description">Linda taza para acompañar tu mañana.</p>
+                                <button class="add-to-cart" onclick="agregarALista('Taza ¨la mejora parte de mi vida', 'Q20.00', 'assets/fotos/imagen (178).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 36 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (192).jpeg" alt="Producto 36" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Taza ¨Jesus es Grande¨</span>
+                                <span class="producto-price">Q20.00</span>
+                                <p class="producto-description">Linda taza para acompañar tu mañana..</p>
+                                <button class="add-to-cart" onclick="agregarALista('Taza ¨Jesus es Grande¨', 'Q20.00', 'assets/fotos/imagen (192).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+
+                        <!-- Producto 37 -->
+                        <div class="producto-item">
+                            <img src="assets/fotos/imagen (196).jpeg" alt="Producto 37" class="producto-image">
+                            <div class="producto-details">
+                                <span class="producto-name">Taza ¨Todo lo puedo en Cristo¨</span>
+                                <span class="producto-price">Q20.00</span>
+                                <p class="producto-description">Linda taza para acompañar tu mañana..</p>
+                                <button class="add-to-cart" onclick="agregarALista('Taza ¨Todo lo puedo en Cristo¨', 'Q20.00', 'assets/fotos/imagen (196).jpeg')">Añadir a la lista</button>
+                            </div>
+                        </div>
+    </section>
+
+    <!-- Lista de productos -->
+    <section class="lista-section" id="lista">
+        <h2>Tu lista de productos</h2>
+        <div id="lista-container" class="lista-container">
+          <!-- Aquí se agregarán los productos dinámicamente -->
+        </div>
+        <div class="total">
+            <span class="total-label">Total:</span>
+            <span id="total">Q0.00</span>
+        </div>
+        <div class="finalizar-container">
+            <button class="finalizar-pedido" onclick="finalizarPedido()">Finalizar pedido</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 CatálogoVariedades - Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
